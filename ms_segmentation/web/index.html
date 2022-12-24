@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>segmEMta</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- favicon -->		
+		<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/logo/favicon.ico') }}">
+
+		<!-- all css here -->
+
+		<!-- bootstrap v3.3.6 css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">		
+		<!-- style css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<!-- font-awesome css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}">
+		
+	</head>
+		<body>
+        <div id="preloader"></div>
+        <div id="loading"></div>
+        <header class="header-one">
+            <!-- Start top bar -->
+            <div class="topbar-area fix hidden-xs">
+                <div class="header-footer-container">
+                    <div class="row">
+                        <div class=" col-md-9 col-sm-9">
+                            <div class="topbar-left">
+                                <ul>
+                                    <li><a class="mailto" href="mailto:avicentegom@uoc.edu"><i class="fa fa-envelope"></i>avicentegom@uoc.edu</a></li>
+									<li><a href="https://www.linkedin.com/in/adri%C3%A1n-v-985545163/" target="_blank"><i class="fa fa-linkedin"></i>Adrián Vicente Gómez</a></li>                              
+                                </ul>  
+                            </div>
+						</div>
+                    
+                </div>
+            </div>
+            <!-- End top bar -->
+        <!-- Start Intro Area -->
+        <div class="intro-area" id="intro">
+            <div class="page-img elec-page">
+                <img src="{{ url_for('static', filename='img/background/mask.png') }}" alt="" width="100%">
+            </div>
+			<div class="intro-content">
+				<div class="slider-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-18">
+								<!-- layer 1 -->
+								<div class="layer-1 wow fadeInUp" data-wow-delay="0.3s">
+                                    <h2 class="title1">segmEMta</h2>
+								</div>
+								<!-- layer 2 -->
+								<div class="layer-2 wow fadeInUp" data-wow-delay="0.5s">
+									<p>Detección de nuevas lesiones en pacientes de esclerósis múltiple en imágenes por resonancia magnética</p>
+								</div>
+								<!-- layer 3 -->
+								<div class="layer-3 wow fadeInUp" data-wow-delay="0.7s">
+									<form id = "formulario" action ="" enctype = "multipart/form-data">
+										<label for="bl_image">Elige una imagen de Base Line
+										<input   type="file"  id="bl_img"   name="bl_file"  accept=".nii.gz"/></label>
+										<label for="fl_img">Elige una imagen de Follow Up
+										<input   type="file"  id="fl_img"   name="fl_file"  accept=".nii.gz"/></label>
+										<input type = "submit" value="Segmentar nuevas lesiones" />
+									</form>
+									<form  id="form-download" action="http://localhost:8000/mask/" method="GET" style="display: none;">
+										<label for="bl_image">Máscara disponible
+										<input id = "download" type = "submit" value="Descargar" /></label>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <!-- End Quote Area -->
+        <!-- Start Footer Area -->
+        <div class="footer-area-bottom hidden-xs">
+            <div class="header-footer-container">
+                <div class="row" >
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="copyright">
+                            <p>
+                                <a href="#intro"></a>
+                                Copyright © 2023
+                                <a href="https://www.linkedin.com/in/adri%C3%A1n-v-985545163/">Adrián Vicente Gómez</a> All Rights Reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Area -->
+
+		
+		<!-- all js here -->
+
+		<!-- jquery latest version -->
+		<script src="{{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+		<!-- bootstrap js -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- owl.carousel js -->
+		<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+		<!-- main js -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+		<script type="text/javascript">
+			$('#formulario').on('submit', function(event){
+				event.preventDefault();
+				var form_data = new FormData(document.getElementById("formulario"));
+				var fl_img = $("input[name=fl_img]");
+			    var bl_img = $("input[name=bl_img]");
+				$.ajax({
+					type: 'POST',
+					url:'http://localhost:8000/',
+					data: form_data,
+					processData:false,
+					contentType:false,
+					beforeSend: function(){
+						$("#loading").show();
+						$("#content").hide();
+					},
+					success: function(){
+						$("#loading").hide();
+						$("#content").show();
+						$("#form-download").show();
+						return data;
+					}
+
+				})
+			}
+			)
+		</script>
+	</body>
+</html>

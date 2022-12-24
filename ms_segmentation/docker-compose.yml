@@ -1,0 +1,17 @@
+version: "1.0"
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+    volumes:
+      - .:/code
+    environment:
+      FLASK_DEBUG: True
+    deploy:
+          resources:
+            reservations:
+              devices:
+                - driver: nvidia
+                  count: 1
+                  capabilities: [gpu]

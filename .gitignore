@@ -1,0 +1,6 @@
+__pycache__
+training_log*
+*.model
+*.nii.gz
+*.pkl
+*.*npz

@@ -1,0 +1,200 @@
+{
+    "author": "Fabian",
+    "description": "",
+    "id": "c18734dcdcee",
+    "name": "",
+    "results": {
+        "all": [
+            {
+                "1": {
+                    "Accuracy": 1.0,
+                    "Dice": NaN,
+                    "False Discovery Rate": NaN,
+                    "False Negative Rate": NaN,
+                    "False Omission Rate": 0.0,
+                    "False Positive Rate": 0.0,
+                    "Jaccard": NaN,
+                    "Negative Predictive Value": 1.0,
+                    "Precision": NaN,
+                    "Recall": NaN,
+                    "Total Positives Reference": 0,
+                    "Total Positives Test": 0,
+                    "True Negative Rate": 1.0
+                },
+                "reference": "/home/costoya/Documentos/delegado/nnUNet_preprocessed/Task501_MS_segmentation/gt_segmentations/MS_00015.nii.gz",
+                "test": "/home/costoya/Documentos/delegado/nnUNet_trained_models/nnUNet/3d_fullres/Task501_MS_segmentation/nnUNetTrainerV2__nnUNetPlansv2.1/fold_3/validation_raw_postprocessed/MS_00015.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9996234610232997,
+                    "Dice": 0.6461938841899805,
+                    "False Discovery Rate": 0.31275947965679496,
+                    "False Negative Rate": 0.39022593320235754,
+                    "False Omission Rate": 0.00022016180576463692,
+                    "False Positive Rate": 0.00015657562186843776,
+                    "Jaccard": 0.4773164167627835,
+                    "Negative Predictive Value": 0.9997798381942353,
+                    "Precision": 0.687240520343205,
+                    "Recall": 0.6097740667976425,
+                    "Total Positives Reference": 4072,
+                    "Total Positives Test": 3613,
+                    "True Negative Rate": 0.9998434243781316
+                },
+                "reference": "/home/costoya/Documentos/delegado/nnUNet_preprocessed/Task501_MS_segmentation/gt_segmentations/MS_00016.nii.gz",
+                "test": "/home/costoya/Documentos/delegado/nnUNet_trained_models/nnUNet/3d_fullres/Task501_MS_segmentation/nnUNetTrainerV2__nnUNetPlansv2.1/fold_3/validation_raw_postprocessed/MS_00016.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9987148651328508,
+                    "Dice": 0.547846423699084,
+                    "False Discovery Rate": 0.41619937694704046,
+                    "False Negative Rate": 0.48393611162107586,
+                    "False Omission Rate": 0.0007310645003565187,
+                    "False Positive Rate": 0.0005558839511810021,
+                    "Jaccard": 0.3772647966715877,
+                    "Negative Predictive Value": 0.9992689354996435,
+                    "Precision": 0.5838006230529595,
+                    "Recall": 0.5160638883789241,
+                    "Total Positives Reference": 10894,
+                    "Total Positives Test": 9630,
+                    "True Negative Rate": 0.999444116048819
+                },
+                "reference": "/home/costoya/Documentos/delegado/nnUNet_preprocessed/Task501_MS_segmentation/gt_segmentations/MS_00018.nii.gz",
+                "test": "/home/costoya/Documentos/delegado/nnUNet_trained_models/nnUNet/3d_fullres/Task501_MS_segmentation/nnUNetTrainerV2__nnUNetPlansv2.1/fold_3/validation_raw_postprocessed/MS_00018.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9989145595809574,
+                    "Dice": 0.3333900323184215,
+                    "False Discovery Rate": 0.31991672449687714,
+                    "False Negative Rate": 0.7791798107255521,
+                    "False Omission Rate": 0.0009581402436912506,
+                    "False Positive Rate": 0.00012783971949581474,
+                    "Jaccard": 0.2000408246580935,
+                    "Negative Predictive Value": 0.9990418597563088,
+                    "Precision": 0.6800832755031229,
+                    "Recall": 0.22082018927444794,
+                    "Total Positives Reference": 8876,
+                    "Total Positives Test": 2882,
+                    "True Negative Rate": 0.9998721602805042
+                },
+                "reference": "/home/costoya/Documentos/delegado/nnUNet_preprocessed/Task501_MS_segmentation/gt_segmentations/MS_00022.nii.gz",
+                "test": "/home/costoya/Documentos/delegado/nnUNet_trained_models/nnUNet/3d_fullres/Task501_MS_segmentation/nnUNetTrainerV2__nnUNetPlansv2.1/fold_3/validation_raw_postprocessed/MS_00022.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 1.0,
+                    "Dice": NaN,
+                    "False Discovery Rate": NaN,
+                    "False Negative Rate": NaN,
+                    "False Omission Rate": 0.0,
+                    "False Positive Rate": 0.0,
+                    "Jaccard": NaN,
+                    "Negative Predictive Value": 1.0,
+                    "Precision": NaN,
+                    "Recall": NaN,
+                    "Total Positives Reference": 0,
+                    "Total Positives Test": 0,
+                    "True Negative Rate": 1.0
+                },
+                "reference": "/home/costoya/Documentos/delegado/nnUNet_preprocessed/Task501_MS_segmentation/gt_segmentations/MS_00023.nii.gz",
+                "test": "/home/costoya/Documentos/delegado/nnUNet_trained_models/nnUNet/3d_fullres/Task501_MS_segmentation/nnUNetTrainerV2__nnUNetPlansv2.1/fold_3/validation_raw_postprocessed/MS_00023.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9993588174100323,
+                    "Dice": 0.1419570051890289,
+                    "False Discovery Rate": 0.6359315589353612,
+                    "False Negative Rate": 0.9118324125230203,
+                    "False Omission Rate": 0.0005486164781619894,
+                    "False Positive Rate": 9.270180448428533e-05,
+                    "Jaccard": 0.07640135647316976,
+                    "Negative Predictive Value": 0.999451383521838,
+                    "Precision": 0.36406844106463876,
+                    "Recall": 0.08816758747697974,
+                    "Total Positives Reference": 4344,
+                    "Total Positives Test": 1052,
+                    "True Negative Rate": 0.9999072981955157
+                },
+                "reference": "/home/costoya/Documentos/delegado/nnUNet_preprocessed/Task501_MS_segmentation/gt_segmentations/MS_00025.nii.gz",
+                "test": "/home/costoya/Documentos/delegado/nnUNet_trained_models/nnUNet/3d_fullres/Task501_MS_segmentation/nnUNetTrainerV2__nnUNetPlansv2.1/fold_3/validation_raw_postprocessed/MS_00025.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9995454943282345,
+                    "Dice": 0.4952322362350046,
+                    "False Discovery Rate": 0.349232012934519,
+                    "False Negative Rate": 0.6002979145978153,
+                    "False Omission Rate": 0.0003349699482916117,
+                    "False Positive Rate": 0.00011971726771942137,
+                    "Jaccard": 0.32910874897792314,
+                    "Negative Predictive Value": 0.9996650300517084,
+                    "Precision": 0.650767987065481,
+                    "Recall": 0.3997020854021847,
+                    "Total Positives Reference": 4028,
+                    "Total Positives Test": 2474,
+                    "True Negative Rate": 0.9998802827322806
+                },
+                "reference": "/home/costoya/Documentos/delegado/nnUNet_preprocessed/Task501_MS_segmentation/gt_segmentations/MS_00026.nii.gz",
+                "test": "/home/costoya/Documentos/delegado/nnUNet_trained_models/nnUNet/3d_fullres/Task501_MS_segmentation/nnUNetTrainerV2__nnUNetPlansv2.1/fold_3/validation_raw_postprocessed/MS_00026.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.999377789767446,
+                    "Dice": 0.5833256051191691,
+                    "False Discovery Rate": 0.04320048676604804,
+                    "False Negative Rate": 0.5804429028815368,
+                    "False Omission Rate": 0.000602819855785983,
+                    "False Positive Rate": 1.9685214019848907e-05,
+                    "Jaccard": 0.4117570044514271,
+                    "Negative Predictive Value": 0.999397180144214,
+                    "Precision": 0.956799513233952,
+                    "Recall": 0.4195570971184632,
+                    "Total Positives Reference": 7496,
+                    "Total Positives Test": 3287,
+                    "True Negative Rate": 0.9999803147859802
+                },
+                "reference": "/home/costoya/Documentos/delegado/nnUNet_preprocessed/Task501_MS_segmentation/gt_segmentations/MS_00037.nii.gz",
+                "test": "/home/costoya/Documentos/delegado/nnUNet_trained_models/nnUNet/3d_fullres/Task501_MS_segmentation/nnUNetTrainerV2__nnUNetPlansv2.1/fold_3/validation_raw_postprocessed/MS_00037.nii.gz"
+            },
+            {
+                "1": {
+                    "Accuracy": 0.9999916909383589,
+                    "Dice": 0.7727272727272727,
+                    "False Discovery Rate": 0.13559322033898302,
+                    "False Negative Rate": 0.3013698630136986,
+                    "False Omission Rate": 6.0934114434820855e-06,
+                    "False Positive Rate": 2.2157945714917915e-06,
+                    "Jaccard": 0.6296296296296297,
+                    "Negative Predictive Value": 0.9999939065885565,
+                    "Precision": 0.864406779661017,
+                    "Recall": 0.6986301369863014,
+                    "Total Positives Reference": 146,
+                    "Total Positives Test": 118,
+                    "True Negative Rate": 0.9999977842054285
+                },
+                "reference": "/home/costoya/Documentos/delegado/nnUNet_preprocessed/Task501_MS_segmentation/gt_segmentations/MS_00057.nii.gz",
+                "test": "/home/costoya/Documentos/delegado/nnUNet_trained_models/nnUNet/3d_fullres/Task501_MS_segmentation/nnUNetTrainerV2__nnUNetPlansv2.1/fold_3/validation_raw_postprocessed/MS_00057.nii.gz"
+            }
+        ],
+        "mean": {
+            "1": {
+                "Accuracy": 0.9995029642423534,
+                "Dice": 0.5029532084968515,
+                "False Discovery Rate": 0.31611898001080346,
+                "False Negative Rate": 0.5781835640807225,
+                "False Omission Rate": 0.0003779851381661636,
+                "False Positive Rate": 0.00011940215259336689,
+                "Jaccard": 0.35735982537494493,
+                "Negative Predictive Value": 0.9996220148618339,
+                "Precision": 0.6838810199891966,
+                "Recall": 0.42181643591927764,
+                "Total Positives Reference": 4428.444444444444,
+                "Total Positives Test": 2561.777777777778,
+                "True Negative Rate": 0.9998805978474066
+            }
+        }
+    },
+    "task": "",
+    "timestamp": "2022-12-15 12:00:25.451038"
+}
