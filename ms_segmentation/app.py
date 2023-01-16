@@ -10,6 +10,8 @@ app.config['UPLOAD_FOLDER'] = './imagesTs'
 
 @app.route('/')
 def home():
+   if not(os.path.isdir('imagesTs')):
+      os.mkdir('imagesTs')
    return render_template('index.html')
 
 @app.route('/', methods = ['POST'])
