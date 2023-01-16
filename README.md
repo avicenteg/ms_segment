@@ -27,8 +27,11 @@ git clone https://github.com/avicenteg/ms_segment.git
 ```
 unzip models.zip
 ```
-
-4. Una vez descomprimido el fichero, volver al directorio /ms_segmentation/, y ejecutar el comando:
+4. Una vez descomprimido el fichero, volver al directorio /ms_segmentation/, previamente a arrancar la aplicación, se debe disponer de una instalación de Docker con el plugin de compose. Se podrá instalar con el siguiente comando: 
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
+5. Con la instalación completada, ejecutar el comando:
 ```
 docker compose up
 ```
